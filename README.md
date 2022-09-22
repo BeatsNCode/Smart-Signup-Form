@@ -1,4 +1,4 @@
-# Sign Up Form with validator
+# Smart Signup Form
 
 IP address lookup tools to consider:
 https://www.abstractapi.com/api/ip-geolocation-api#pricing
