@@ -1,20 +1,29 @@
 'use-strict';
 
+// on submit, collect email address, and if applicable, phone number
 function logSentence() {
-    event.preventDefault()
-    console.log('recorded a click')
+
+    let submission = {}
 
     let email = document.getElementById('emailAddress').value;
-    console.log(email)
 
     let phone = document.getElementById('phoneNumber').value;
-    if (phone) {
-        console.log(phone)
+    
+    event.preventDefault()
+
+    submission = {
+        'email': email,
+        'phone': phone
     }
 
+    console.log(submission)
+
+    return submission
 }
 
-// on submit, collect email address, and if applicable, phone number
+
+
+
 // Run email through kicbox 
 // run phone number through Twilio lookup
 // if email not deliverable, collect IP and lookup results
