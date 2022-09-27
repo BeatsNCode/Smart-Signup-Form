@@ -17,9 +17,18 @@ function logSentence() {
     }
 
     console.log(submission)
-
     return submission
 }
+
+function readObject(data) {
+    data = logSentence()
+
+    console.log(data.keys())
+
+}
+
+readObject()
+// Collect IP address on submit
 
 
 
